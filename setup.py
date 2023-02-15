@@ -52,12 +52,6 @@ classifiers = [
 
 package_dir = {"": "src"}
 
-
-if any(arg.startswith("bdist") for arg in sys.argv):
-    import lib3to6
-    package_dir = lib3to6.fix(package_dir)
-
-
 setuptools.setup(
     name="lexid",
     license="MIT",
